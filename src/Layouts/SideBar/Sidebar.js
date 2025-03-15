@@ -45,6 +45,16 @@ const menuItems = [
         icon: <LinearScaleIcon style={{ color: "white", fontSize: "22px" }} />,
         path: "/graphVisualization",
     },
+    {
+        label: "Cited Works",
+        icon: <LinearScaleIcon style={{ color: "white", fontSize: "22px" }} />,
+        path: "/citedWorks",
+    },
+    {
+        label: "React recharts",
+        icon: <LinearScaleIcon style={{ color: "white", fontSize: "22px" }} />,
+        path: "/recharts",
+    },
     // {
     //     label: "Analytics",
     //     icon: <PieChart style={{ color: "white", fontSize: "22px" }} />,
@@ -75,7 +85,7 @@ const Sidebar = ({ open, closeSubMenus, active }) => {
             {menuItems.map((item, index) => (
                 <React.Fragment key={index}>
                     <ExpandedListItem
-                        style={{ backgroundColor: "#2e2559" }}
+                        style={{ backgroundColor: "#364860" }}
                         active={selectedTab === item.label}
                         button
                         onClick={() =>
@@ -108,7 +118,7 @@ const Sidebar = ({ open, closeSubMenus, active }) => {
                                 {item.subItems.map((subItem, subIndex) => (
                                     <IconSubListItem
                                         key={subIndex}
-                                        style={{ backgroundColor: "#2e2559" }}
+                                        style={{ backgroundColor: "#364860" }}
                                         active={selectedTab === subItem.label}
                                         button
                                         onClick={() => handleNavigation(subItem.path, subItem.label)}

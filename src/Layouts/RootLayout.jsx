@@ -61,7 +61,7 @@ const StyledIconButton = styled(IconButton)`
 const StyledSettingsButton = styled(IconButton)`
     padding: 11px;
     border-radius:6px;
-    background-color:#2e2559;
+    background-color:#364860;
     color:#928ea9;
 `;
 const StyledBadge = styled(Badge)`
@@ -109,11 +109,11 @@ const useStyles = makeStyles((theme) => ({
         height: "100%",
         flexShrink: 0,
         whiteSpace: "nowrap",
-        backgroundColor: "#2e2559", // Sidebar background color
+        backgroundColor: "#364860", // Sidebar background color
     },
     drawerOpen: {
         width: drawerWidth,
-        backgroundColor: "#2e2559", // Sidebar background color when open
+        backgroundColor: "#364860", // Sidebar background color when open
         transition: theme.transitions.create("width", {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.enteringScreen,
@@ -135,7 +135,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     drawerClose: {
-        backgroundColor: "#2e2559", // Sidebar background color when closed
+        backgroundColor: "#364860", // Sidebar background color when closed
         transition: theme.transitions.create("width", {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,

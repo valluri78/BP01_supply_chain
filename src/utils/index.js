@@ -36,6 +36,8 @@ export function pathToTitlesConversion(path) {
         "createNode":"Canvas",
         "transactions":"Transactions",
         "graphVisualization":"Graph Visualization",
+        "citedWorks":"Cited Works",
+        "recharts":"React recharts",
     };
     return pathTitleMap[path] || '';
 }

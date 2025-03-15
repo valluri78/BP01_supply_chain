@@ -11,6 +11,8 @@ import { Dashboard } from "../containers/Dashboard/Dashboard.jsx";
 import { UsersList } from "../containers/Users/UsersList.jsx";
 import { CreateNode } from "../containers/UserDetails/CreateNode.jsx";
 import { GraphVisualization } from "../containers/Graphs/GraphVisualization.jsx";
+import { CitedWorkComponent } from '../containers/Graphs/CitedWorkComponent.jsx';
+import { LargeNetworkGraph } from '../containers/Graphs/LargeNetworkGraph.jsx';
 
 export default function AppRoutes() {
     const router = createBrowserRouter([
@@ -37,6 +39,14 @@ export default function AppRoutes() {
                 {
                     path: "graphVisualization",
                     element: <GraphVisualization />,
+                },
+                {
+                    path: "citedWorks",
+                    element: <CitedWorkComponent />,
+                },
+                {
+                    path: "recharts",
+                    element: <LargeNetworkGraph />,
                 },
             ],
         },

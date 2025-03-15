@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ListItem } from "@material-ui/core";
 
 export const ExpandedListItem = styled(ListItem)`
-    background-color: #2e2559;
+    background-color: #364860;
     cursor: pointer;
     &:hover {
         background-color: #3a2e6e;
@@ -11,7 +11,7 @@ export const ExpandedListItem = styled(ListItem)`
 `;
 
 export const IconSubListItem = styled(ListItem)`
-    background-color: #2e2559;
+    background-color: #364860;
     padding-left: 40px;
     cursor: pointer;
     &:hover {
