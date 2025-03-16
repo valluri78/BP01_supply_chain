@@ -17,6 +17,7 @@ import { Tooltip, Typography, Grid, Badge } from "@material-ui/core";
 import { useAuth } from "../context/AuthContext";
 import { StyledRoot } from "../components/GlobalStyledComponents/GlobalStyledComponents";
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
+import Avatar from '@material-ui/core/Avatar';
 
 
 // Styled Components
@@ -48,7 +49,7 @@ const SearchInput = styled.input`
 const NmsDiv = styled.div`
     padding: 4px 4px 4px 8px;
     font-size: 26px;
-    color: #fff;
+    color: #2f2d46;
 `;
 
 const StyledIconButton = styled(IconButton)`
@@ -61,8 +62,8 @@ const StyledIconButton = styled(IconButton)`
 const StyledSettingsButton = styled(IconButton)`
     padding: 11px;
     border-radius:6px;
-    background-color:#364860;
-    color:#928ea9;
+    color:#2f2d46;
+    border:1px solid lightgrey;
 `;
 const StyledBadge = styled(Badge)`
     & .MuiBadge-dot {
@@ -109,11 +110,11 @@ const useStyles = makeStyles((theme) => ({
         height: "100%",
         flexShrink: 0,
         whiteSpace: "nowrap",
-        backgroundColor: "#364860", // Sidebar background color
+        backgroundColor: "#ffffff", // Sidebar background color
     },
     drawerOpen: {
         width: drawerWidth,
-        backgroundColor: "#364860", // Sidebar background color when open
+        backgroundColor: "#ffffff", // Sidebar background color when open
         transition: theme.transitions.create("width", {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.enteringScreen,
@@ -135,7 +136,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     drawerClose: {
-        backgroundColor: "#364860", // Sidebar background color when closed
+        backgroundColor: "#ffffff", // Sidebar background color when closed
         transition: theme.transitions.create("width", {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -283,7 +284,7 @@ export default function RootLayout() {
                                         [classes.hide]: open,
                                     })}
                                 >
-                                     <AttachMoneyIcon style={{ color: "black", fontSize: "32px", }} />
+                                     <Avatar alt="Remy Sharp" src="https://res.cloudinary.com/dyofpgt7k/image/upload/v1742128425/supplyChain_tk8zwd.png" />
                                 </IconButton>
                             </Grid>
                             <Grid item>
@@ -354,11 +355,11 @@ export default function RootLayout() {
                 <div className={classes.toolbar}>
                     <Grid container  alignItems="center" wrap="nowrap" style={{marginLeft:'12px'}}>
                                 <Grid item>
-                                <AttachMoneyIcon style={{ color: "white", fontSize: "28px" }} />
+                                <Avatar alt="Remy Sharp" src="https://res.cloudinary.com/dyofpgt7k/image/upload/v1742128425/supplyChain_tk8zwd.png" />
                                 </Grid>
                                 <Grid item>
-                                    <NmsDiv className="nms">Cash Flow</NmsDiv>
-                                </Grid>
+                                    <NmsDiv >Supply Chain</NmsDiv>
+                                </Grid> 
                     </Grid>
                 </div>
                 <Divider />

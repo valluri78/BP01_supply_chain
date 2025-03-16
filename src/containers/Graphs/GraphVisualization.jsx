@@ -25,6 +25,6 @@ export const GraphVisualization = () =>{
       const transformedData = transformData(citedData);
        
 
-    return <div>{data ? <ForceGraph data={data} /> : <p>Loading...</p>}</div>
+    return <div>{transformedData ? <ForceGraph data={transformedData} /> : <p>Loading...</p>}</div>
 }
 

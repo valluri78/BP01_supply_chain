@@ -27,32 +27,32 @@ import LinearScaleIcon from '@material-ui/icons/LinearScale';
 const menuItems = [
     {
         label: "Dashboard",
-        icon: <DashboardOutlined style={{ color: "white", fontSize: "22px" }} />,
+        icon: <DashboardOutlined style={{ color: "#2f2d46", fontSize: "22px" }} />,
         path: "/dashboard",
     },
     {
         label: "Transactions",
-        icon: <SyncAltIcon style={{ color: "white", fontSize: "22px" }} />,
+        icon: <SyncAltIcon style={{ color: "#2f2d46", fontSize: "22px" }} />,
         path: "/transactions",
     },
     {
         label: "Canvas",
-        icon: <TimelineIcon style={{ color: "white", fontSize: "22px" }} />,
+        icon: <TimelineIcon style={{ color: "#2f2d46", fontSize: "22px" }} />,
         path: "/createNode",
     },
     {
         label: "Graph Visualization",
-        icon: <LinearScaleIcon style={{ color: "white", fontSize: "22px" }} />,
+        icon: <LinearScaleIcon style={{ color: "#2f2d46", fontSize: "22px" }} />,
         path: "/graphVisualization",
     },
     {
         label: "Cited Works",
-        icon: <LinearScaleIcon style={{ color: "white", fontSize: "22px" }} />,
+        icon: <LinearScaleIcon style={{ color: "#2f2d46", fontSize: "22px" }} />,
         path: "/citedWorks",
     },
     {
         label: "React recharts",
-        icon: <LinearScaleIcon style={{ color: "white", fontSize: "22px" }} />,
+        icon: <LinearScaleIcon style={{ color: "#2f2d46", fontSize: "22px" }} />,
         path: "/recharts",
     },
     // {
@@ -85,7 +85,7 @@ const Sidebar = ({ open, closeSubMenus, active }) => {
             {menuItems.map((item, index) => (
                 <React.Fragment key={index}>
                     <ExpandedListItem
-                        style={{ backgroundColor: "#364860" }}
+                        style={{ backgroundColor: "#ffffff", color:'#2f2d46' }}
                         active={selectedTab === item.label}
                         button
                         onClick={() =>
@@ -100,6 +100,7 @@ const Sidebar = ({ open, closeSubMenus, active }) => {
                                 <StyledListItemText
                                     style={{
                                         fontWeight: selectedTab === item.label ? "bold" : "normal",
+                                        color:'#2f2d46'
                                     }}
                                     className="sidebarListText"
                                 >

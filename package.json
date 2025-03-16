@@ -21,6 +21,7 @@
     "react-router-dom": "^6.30.0",
     "react-scripts": "5.0.1",
     "react-sticky-table": "^3.0.0",
+    "react-vis-network-graph": "^3.0.1",
     "reactflow": "^11.11.4",
     "recharts": "^2.15.1",
     "styled-components": "^5.3.11",
