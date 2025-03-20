@@ -18,7 +18,7 @@ export default function AppRoutes() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Navigate to="/dashboard" replace />,
+            element: <Navigate to="/graphVisualization" replace />,
         },
         {
             path: "/",
